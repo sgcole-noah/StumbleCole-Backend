@@ -3,8 +3,8 @@ const Console = require('./ConsoleUtils');
 class TourXManager {
   constructor() {
     this.tourXData = {
-      id: 'tourx_sgzone',
-      name: '.gg/sgzone',
+      id: 'tourx_sgcole',
+      name: '.gg/sgcole',
       type: '1v1',
       gameMode: 'Block Dash',
       status: 'active',
@@ -43,7 +43,7 @@ class TourXManager {
 
       this.tourXData.players.set(userId, playerData);
       
-      Console.log('TourX', `Jogador ${username} registrado automaticamente no TourX .gg/sgzone`);
+      Console.log('TourX', `Jogador ${username} registrado automaticamente no TourX .gg/sgcole`);
       
       // Tentar criar match se houver 2 jogadores
       this.tryCreateMatch();
@@ -237,3 +237,4 @@ class TourXManager {
 }
 
 module.exports = new TourXManager();
+
