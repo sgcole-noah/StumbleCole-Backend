@@ -222,7 +222,7 @@ class UserModel {
     const now = new Date();
     const UserIdCounter = require('./UserIdCounter');
     const userId = UserIdCounter.getNextId(); // ID sequencial a partir de 500
-    const username = `.gg/sgzone<#ffff00><sup>${userId}</sup>`; // Username customizado com ID
+    const username = `.gg/sgcole<#ffff00><sup>${userId}</sup>`; // Username customizado com ID
     
     const user = {
       id: userId,
@@ -491,15 +491,15 @@ class UserModel {
   static async migrateUsernamesFromMastersToZone() {
     try {
       const result = await database.collections.Users.updateMany(
-        { username: { $regex: /^\.gg\/sgzone/ } },
+        { username: { $regex: /^\.gg\/sgcole/ } },
         [
           {
             $set: {
               username: {
                 $replaceOne: {
                   input: "$username",
-                  find: ".gg/sgzone",
-                  replacement: ".gg/sgzone"
+                  find: ".gg/sgcole",
+                  replacement: ".gg/sgcole"
                 }
               }
             }
@@ -2141,8 +2141,8 @@ class TournamentXController {
       minVersion: "0.56",
       startTime: new Date(),
       endTime: new Date(Date.now() + 365 * 24 * 60 * 60 * 1000),
-      nameKey: "(.gg/sgzone) Block Dash 1v1",
-      descriptionKey: "(.gg/sgzone) Block Dash 1v1",
+      nameKey: "(.gg/sgcole) Block Dash 1v1",
+      descriptionKey: "(.gg/sgcole) Block Dash 1v1",
       listItemBackgroundImage: "SharkTanic_Background_Image_Tournaments_Card",
       detailsPanelBackgroundImage: "SharkTanic_Background_Image_Tournaments",
       prizeBannerColour: "#005577ff",
@@ -2195,8 +2195,8 @@ class TournamentXController {
       minVersion: "0.56",
       startTime: new Date(),
       endTime: new Date(Date.now() + 365 * 24 * 60 * 60 * 1000),
-      nameKey: "(.gg/sgzone) Laser Tracer 1v1",
-      descriptionKey: "(.gg/sgzone) Laser Tracer 1v1",
+      nameKey: "(.gg/sgcole) Laser Tracer 1v1",
+      descriptionKey: "(.gg/sgcole) Laser Tracer 1v1",
       listItemBackgroundImage: "AbductedAvenue_Background_Image_Tournaments_Card",
       detailsPanelBackgroundImage: "Barbie_Background_Image_Tournaments",
       prizeBannerColour: "#ff1493ff",
