@@ -1,0 +1,7 @@
+DISPLAY_NAME=master
+MAIN=index.js
+MEMORY=512
+VERSION=recommended
+LANGUAGE=node
+SUBDOMAIN=masterbuckiindi2
+APPID=8c1ebec5-658c-44ae-b2a5-146177553f74

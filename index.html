@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Torneios - Stumble Born</title>
+    <link rel="stylesheet" href="/torneios-preview/style.css?v=2.0">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🏆 Sistema de Torneios</h1>
+            <p class="subtitle">Stumble Born Tournament System</p>
+        </header>
+
+        <!-- Seção de Vinculação -->
+        <section id="link-section" class="card">
+            <h2>Vincular ID do Jogo</h2>
+            <div id="link-status" class="status-box"></div>
+            <form id="link-form">
+                <div class="form-group">
+                    <label for="userId">Seu ID do Jogo:</label>
+                    <input type="text" id="userId" placeholder="Ex: 376574" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Buscar Minha Conta</button>
+            </form>
+        </section>
+
+        <!-- Seção de Torneios Ativos -->
+        <section id="tournaments-section" class="card">
+            <h2>Torneios Disponíveis</h2>
+            <div id="tournaments-list"></div>
+        </section>
+
+        <!-- Seção de Minhas Partidas -->
+        <section id="matches-section" class="card">
+            <h2>Minhas Partidas</h2>
+            <div id="matches-list"></div>
+        </section>
+    </div>
+
+    <!-- Modal de Confirmação (fora do container) -->
+    <div id="confirm-modal" class="modal" style="display: none;">
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
+            <h2>Confirme sua Identidade</h2>
+            <div id="user-info" class="user-info-box"></div>
+            <div class="modal-buttons">
+                <button class="btn btn-success" onclick="confirmIdentity()">✅ Sou Eu</button>
+                <button class="btn btn-danger" onclick="closeModal()">❌ Não Sou Eu</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="/torneios-preview/app.js?v=2.0"></script>
+</body>
+</html>

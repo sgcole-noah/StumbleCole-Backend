@@ -1,0 +1,27 @@
+{
+  "tournaments": [
+    [
+      "tournament_1769126836094",
+      {
+        "id": "tournament_1769126836094",
+        "name": "migz obeso",
+        "style": "1v1",
+        "emojis": "soco",
+        "map": "level19",
+        "maxPlayers": 2,
+        "rounds": 1,
+        "startTime": "19:00",
+        "registrationTime": "18:00",
+        "registrationOpenTime": 1769191200000,
+        "tournamentStartTime": 1769194800000,
+        "status": "scheduled",
+        "players": [],
+        "matches": [],
+        "currentRound": 0,
+        "createdAt": 1769126836095,
+        "createdBy": "1390125630791749662"
+      }
+    ]
+  ],
+  "playerLinks": []
+}
